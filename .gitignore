@@ -396,3 +396,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# CMake
+build/
+cmake-build-*/
+
+# Real installers used as test references
+tests/non-synth/
