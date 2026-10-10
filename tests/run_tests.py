@@ -264,7 +264,7 @@ def run(binary, workdir, name, image, version, comp, expected):
 
 
 def main():
-    binary = sys.argv[1]
+    binary = os.path.abspath(sys.argv[1])
     failed = 0
     with tempfile.TemporaryDirectory() as tmp:
         workdir = Path(tmp)
